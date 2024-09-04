@@ -33,10 +33,10 @@ if (isset($_GET['hal'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $judul ?></title>
 
-    <link rel="stylesheet" href="../public/dataTables.bootstrap5.min.css" />
-    <link rel="stylesheet" href="../public/table-datatable-jquery.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app.css">
 
+    <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.5/cr-2.0.4/r-3.0.3/sp-2.3.2/datatables.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.5/cr-2.0.4/r-3.0.3/sp-2.3.2/datatables.min.js"></script>
 </head>
 
 <body>
@@ -80,10 +80,17 @@ if (isset($_GET['hal'])) {
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/js/app.js"></script>
 
-    <script src="../public/jquery.min.js"></script>
-    <script src="../public/jquery.dataTables.min.js"></script>
-    <script src="../public/dataTables.bootstrap5.min.js"></script>
-    <script src="../public/datatables.js"></script>
+    <script type="text/javascript">
+        new DataTable('#tblBarang', {
+            colReorder: true,
+            responsive: true,
+            colReorder: {
+                columns: ':gt(1)'
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
