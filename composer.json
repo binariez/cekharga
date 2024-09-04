@@ -1,0 +1,23 @@
+{
+    "name": "raaa/cekharga",
+    "description": "Aplikasi Pengecekan Harga Barang",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Azhar SS",
+            "email": "azhacra@gmail.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.19",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
+        },
+        "allow-plugins": {
+            "robloach/component-installer": true
+        }
+    }
+}

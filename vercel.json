@@ -1,0 +1,33 @@
+{
+    "version": 2,
+    "functions": {
+        "api/*.php": { "runtime": "vercel-php@0.5.5" }
+    },
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/index.php",
+            "headers": { "Location": "/api/index.php" },
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/create.php",
+            "dest": "/api/create.php"
+        },
+        {
+            "src": "/read.php",
+            "dest": "/api/read.php"
+        },
+        {
+            "src": "/update.php",
+            "dest": "/api/update.php"
+        },
+        {
+            "src": "/delete.php",
+            "dest": "/api/delete.php"
+        }
+    ]
+}
