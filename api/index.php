@@ -33,8 +33,8 @@ if (isset($_GET['hal'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $judul ?></title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/extensions/simple-datatables/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/table-datatable.css">
+    <link rel="stylesheet" href="../public/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="../public/table-datatable-jquery.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app.css">
 
 </head>
@@ -79,9 +79,11 @@ if (isset($_GET['hal'])) {
     </div>
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/pages/simple-datatables.js"></script>
 
+    <script src="../public/jquery.min.js"></script>
+    <script src="../public/jquery.dataTables.min.js"></script>
+    <script src="../public/dataTables.bootstrap5.min.js"></script>
+    <script src="../public/datatables.js"></script>
 </body>
 
 </html>

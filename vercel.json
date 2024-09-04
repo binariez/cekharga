@@ -28,6 +28,10 @@
         {
             "src": "/delete.php",
             "dest": "/api/Delete.php"
+        },
+        {
+            "src": "/public/(.*)",
+            "dest": "/$1"
         }
     ]
 }
