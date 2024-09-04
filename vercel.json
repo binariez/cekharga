@@ -15,19 +15,19 @@
         },
         {
             "src": "/create.php",
-            "dest": "/api/create.php"
+            "dest": "/api/Create.php"
         },
         {
             "src": "/read.php",
-            "dest": "/api/read.php"
+            "dest": "/api/Read.php"
         },
         {
             "src": "/update.php",
-            "dest": "/api/update.php"
+            "dest": "/api/Update.php"
         },
         {
             "src": "/delete.php",
-            "dest": "/api/delete.php"
+            "dest": "/api/Delete.php"
         }
     ]
 }
